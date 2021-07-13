@@ -1,11 +1,19 @@
 var upgrades = {
   employee: {
-    cps: 0.1,
+    cps: 1,
     cost: 10
   },
   Oven: {
     clickModifier: 1,
     cost: 25
+  },
+  grandma: {
+    cps: 5,
+    cost: 25
+  }
+  chocolateBar: {
+    clickModifier: 5,
+    cost: 100
   }
 }
 
@@ -23,8 +31,6 @@ function mine() {
 document.getElementById("cookiePic").addEventListener("click", mine);
 
 
-function test() {
-  return console.log("That Works")
+function purchase(cost,(clickModifier || cps)) {
+  document.getElementById(price, upgrade).
 }
-
-document.getElementById('ug').addEventListener('click', test)
